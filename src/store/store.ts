@@ -35,7 +35,8 @@ export interface TodoStore {
 
 // Create Zustand Store
 const useTodoStore = create<TodoStore>((set) => ({
-    tasks: [],
+    tasks: [{ id: "1", title: "Learn Zustand", description: "Learn how to use Zustand", category: TaskCategory.PERSONAL, dueDate: new Date(), status: TaskStatus.TODO, createdAt: new Date() },
+    { id: "2", title: "Build a Kanban Board", description: "Create a Kanban board for task management", category: TaskCategory.WORK, dueDate: new Date(), status: TaskStatus.IN_PROGRESS, createdAt: new Date() },],
 
     addTask: (task) => {
         const newTask = {

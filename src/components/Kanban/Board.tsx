@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
-import Header from '../Header'
+import Header from '../Header.tsx'
 import Columns from './Columns.tsx';
 import TaskModal from '../List/TaskModal.tsx.tsx';
+
 
 const Board = () => {
 
     const [isOpen, SetisOpen] = useState(false)
+
 
     return (
         <>
